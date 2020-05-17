@@ -1,0 +1,9 @@
+[Unit]
+Description=Checks for Scheduled Events - Terminate Notifications
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /source/termnot.py
+
+[Install]
+WantedBy=multi-user.target
