@@ -29,7 +29,7 @@ def get_scheduled_events():
 
 
 def create_upload_blob(str_print):
-    connect_str = "intsProtocol=https;AccountName=termnotstoracc;AccountKey=4QiT8y12e3igm7ehFyLlrQKrxhI1zA3CdcWycCVdLKF9BLoOVRDVyOxjm0pPw+pNulVR5m/0q8wc5lse2eqKog==;EndpointSuffix=core.windows.net"
+    connect_str = "<blob storage conn string>"
     container_name = "termnot"
     blob_service_client = BlobServiceClient.from_connection_string(connect_str)
 
