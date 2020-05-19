@@ -3,7 +3,7 @@ Description=Checks for Scheduled Events - Terminate Notifications
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/python /source/termnot.py
+ExecStart=/usr/bin/python <full path of termnot.py file here>
 
 [Install]
 WantedBy=multi-user.target
