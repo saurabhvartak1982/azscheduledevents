@@ -39,4 +39,7 @@ https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-py
  - systemctl enable termnot.timer <br />
  - systemctl start termnot.service <br />
  - systemctl start termnot.timer <br />
- 5. If the same set up needs to be replicted -- OR -- if the same set up has to be done for VMSS, then a **Managed Image** should be created of the VM which has the complete set up as mentioned above. The reference link for creation of images is: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/capture-image 
+ 5. If the same set up needs to be replicted -- OR -- if the same set up has to be done for VMSS, then a **Managed Image** should be created of the VM which has the complete set up as mentioned above. This Managed Image can be used for creation of a VM or that of VMSS. <br />
+ The reference link for creation of images is: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/capture-image <br />
+ 
+ For VMSS, one of the Scheduled Events is **Terminate**. More information on the Terminate Notifications can be found at: https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-terminate-notification
