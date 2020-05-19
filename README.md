@@ -24,6 +24,11 @@ There are 4 files: <br />
 You can replace this by your own logic. <br />
 6. For every event type in Scheduled Events, there is a wait time. If the event handling logic completes well before the wait time, then the event can be triggered (instead of waiting out for the entire wait time). This is done by calling the Scheduled Events API again and passing it the EventId. In **termnot.py**, the same is done through the **start_request()** method. <br />
 7. The **start_request()** method should be invoked **only by one of the VM instances** whose name appears in the array of **Resources**. In this code, I am using the leader election logic as to - the **start_request()** method should be invoked by the VM instance whose name appears first in the **Resources** array (Refer point 2. of this section). <br />
+<br />
+Links referred for the source code snippets: <br />
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events#python-sample <br />
+https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python#upload-blobs-to-a-container <br />
+
 
 ## How to use the source files
 1. The file **termnot.py** should be copied to the desired location. The **create_upload_blob()** method should have the connection string of the Azure Storage account - this needs to be entered in the code. A container by the name **termnot** should be created in this storage account. <br />
